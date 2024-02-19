@@ -1,69 +1,50 @@
-import { useState } from "react";
-import { useMediaQuery } from "../util/useMediaQuery";
+import { MdHomeFilled, MdOutlineNoteAlt, MdOutlineFace } from "react-icons/md";
 
 export default function Nav() {
-  const matches = useMediaQuery("(min-width: 768px)");
   return (
     <nav>
-      {/* checks if mobile */}
-      {!matches && (
-        <ul className="fixed top-0 right-0 flex text-center text-2xl shadow-lg">
-          <li>
-            <a
-              className="block border-solid border-black border-l-2 border-b-2 pt-2 pb-3 px-3 rounded-bl-lg"
-              href="/"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              className="block border-solid border-black border-l-2 border-b-2 pt-2 pb-3 px-3"
-              href="/blog/"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              className="block border-solid border-black border-l-2 border-b-2 pt-2 pb-3 px-3"
-              href="/about/"
-            >
-              About
-            </a>
-          </li>
-        </ul>
-      )}
+      {/* mobile */}
+      <ul className="flex gap-x-4 items-center md:hidden py-2 px-4 shadow shadow-black-300">
+        <li className="mr-auto">
+          <a href="/">
+            <MdHomeFilled />
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+        <li>
+          <a href="/about/">About </a>
+        </li>
+      </ul>
 
-      {/* else */}
-      {matches && (
-        <ul className="fixed bottom-32 left-6 flex flex-col text-center">
-          <li>
-            <a
-              className="block border-solid border-black border-2 border-b-0 py-1.5 px-2 hover:translate-x-3 ease-in-out duration-100"
-              href="/"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              className="block border-solid border-black border-2 border-b-0 py-1.5 px-2 hover:translate-x-3 ease-in-out duration-100"
-              href="/blog/"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              className="block border-solid border-black border-2 py-1.5 px-2 hover:translate-x-3 ease-in-out duration-100"
-              href="/about/"
-            >
-              About
-            </a>
-          </li>
-        </ul>
-      )}
+      {/* larger screens */}
+      <ul className="fixed hidden md:flex md:flex-col gap-y-4 w-fit h-screen justify-center items-center shadow-md shadow-black-300">
+        <li className="group relative">
+          <a className="block p-4 hover:drop-shadow-xl" href="/">
+            <MdHomeFilled />
+          </a>
+          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-50 px-2 rounded opacity-0 ease-in duration-200">
+            Home
+          </div>
+        </li>
+        <li className="group relative">
+          <a className="block p-4 hover:drop-shadow-xl" href="/blog/">
+            <MdOutlineNoteAlt />
+          </a>
+          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-50 px-2 rounded opacity-0 ease-in duration-200">
+            Blog
+          </div>
+        </li>
+        <li className="group relative">
+          <a className="block p-4 hover:drop-shadow-xl" href="/about/">
+            <MdOutlineFace />
+          </a>
+          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-50 px-2 rounded opacity-0 ease-in duration-200">
+            About
+          </div>
+        </li>
+      </ul>
     </nav>
   );
 }
