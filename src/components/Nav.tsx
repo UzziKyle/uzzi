@@ -24,7 +24,7 @@ export default function Nav() {
           <a className="block p-4 hover:drop-shadow-xl" href="/">
             <MdHomeFilled />
           </a>
-          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-50 px-2 rounded opacity-0 ease-in duration-200">
+          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-300 px-2 text-white rounded opacity-0 ease-in duration-200">
             Home
           </div>
         </li>
@@ -32,7 +32,7 @@ export default function Nav() {
           <a className="block p-4 hover:drop-shadow-xl" href="/blog/">
             <MdOutlineNoteAlt />
           </a>
-          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-50 px-2 rounded opacity-0 ease-in duration-200">
+          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-300 px-2 text-white rounded opacity-0 ease-in duration-200">
             Blog
           </div>
         </li>
@@ -40,7 +40,7 @@ export default function Nav() {
           <a className="block p-4 hover:drop-shadow-xl" href="/about/">
             <MdOutlineFace />
           </a>
-          <div className="group-hover:opacity-100 absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-50 px-2 rounded opacity-0 ease-in duration-200">
+          <div className="group-hover:opacity-100  absolute top-0 m-4 left-3/4 group-hover:left-full bg-blue-300 px-2 text-white rounded opacity-0 ease-in duration-200">
             About
           </div>
         </li>
