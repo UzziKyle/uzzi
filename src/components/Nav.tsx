@@ -24,7 +24,7 @@ export default function Nav() {
           <a className="peer block p-4 hover:drop-shadow-xl" href="/">
             <MdHomeFilled />
           </a>
-          <div className="peer-hover:visible peer-hover:opacity-100 absolute top-0 m-4 left-3/4 peer-hover:left-full bg-blue-300 px-2 text-white rounded invisible opacity-0 ease-in duration-200">
+          <div className="peer-hover:visible peer-hover:opacity-100 absolute top-0 m-4 left-3/4 peer-hover:left-full bg-gray-50 shadow-lg px-2 rounded  invisible opacity-0 ease-in duration-200">
             Home
           </div>
         </li>
@@ -32,7 +32,7 @@ export default function Nav() {
           <a className="peer block p-4 hover:drop-shadow-xl" href="/blog/">
             <MdOutlineNoteAlt />
           </a>
-          <div className="peer-hover:visible peer-hover:opacity-100 absolute top-0 m-4 left-3/4 peer-hover:left-full bg-blue-300 px-2 text-white rounded invisible opacity-0 ease-in duration-200">
+          <div className="peer-hover:visible peer-hover:opacity-100 absolute top-0 m-4 left-3/4 peer-hover:left-full shadow-lg bg-gray-50 px-2 rounded  invisible opacity-0 ease-in duration-200">
             Blog
           </div>
         </li>
@@ -40,7 +40,7 @@ export default function Nav() {
           <a className="peer block p-4 hover:drop-shadow-xl" href="/about/">
             <MdOutlineFace />
           </a>
-          <div className="peer-hover:visible peer-hover:opacity-100 absolute top-0 m-4 left-3/4 peer-hover:left-full bg-blue-300 px-2 text-white rounded invisible opacity-0 ease-in duration-200">
+          <div className="peer-hover:visible peer-hover:opacity-100 absolute top-0 m-4 left-3/4 peer-hover:left-full shadow-lg  bg-gray-50 px-2 rounded  invisible opacity-0 ease-in duration-200">
             About
           </div>
         </li>
