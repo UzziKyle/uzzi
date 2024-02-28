@@ -7,13 +7,13 @@ const allProjects = await Astro.glob("../contents/projects/*.md");
   <div class="mb-8">
     <h2 class="text-4xl font-bold">Recent Projects</h2>
   </div>
-  <ul class="grid grid-cols-2 space-y-12 md:space-y-0 md:space-x-4 lg:px-12">
+  <div
+    class="md:grid md:grid-cols-2 space-y-12 md:space-y-0 md:space-x-4 lg:px-12"
+  >
     {
       allProjects.map((project) => (
-        <li>
-          <ProjectCard projectData={project.frontmatter} />
-        </li>
+        <ProjectCard projectData={project.frontmatter} />
       ))
     }
-  </ul>
+  </div>
 </section>
