@@ -1,11 +1,11 @@
 export default function ProjectCard({ projectData }) {
   return (
-    <div className="rounded-lg shadow-md w-100 py-2 px-2 lg:flex lg:space-x-4 md:hover:shadow-2xl ease-in-out duration-100">
-      <div className="grid place-items-center h-48 mt-2 mb-2 mx-2 px-2 rounded-lg border-solid border-2 border-black overflow-hidden lg:w-1/2">
+    <div className="rounded-lg shadow-md w-100 py-2 px-2 lg:grid lg:grid-cols-2 md:hover:shadow-2xl ease-in-out duration-100">
+      <div className="grid place-items-center h-48 mt-2 mb-2 mx-2 px-2 rounded-lg border-solid border-2 border-black overflow-hidden">
         <img
           src={projectData.image}
           alt={projectData.name + " screenshot."}
-          className="block h-100 size-fit"
+          className="object-contain"
         />
       </div>
       <div className="flex flex-col items-center text-balance text-center lg:mt-2">
