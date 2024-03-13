@@ -13,7 +13,7 @@ const allTechs = await Astro.glob("../contents/techstack/*.md");
     {
       allTechs.map((tech) => (
         <li>
-          <TechCard cardData={tech.frontmatter} />{" "}
+          <TechCard cardData={tech.frontmatter} />
         </li>
       ))
     }

@@ -1,6 +1,9 @@
 export default function TechCard({ cardData }) {
   return (
-    <div className="group bg-gray-50 relative h-60 rounded-2xl w-[60vw] md:w-[22.5vw] lg:w-[15vw] shadow-md hover:shadow-lg">
+    <div
+      className="group bg-gray-50 relative h-60 rounded-2xl w-[60vw] md:w-[22.5vw] lg:w-[15vw] shadow-md hover:shadow-lg"
+      data-aos="fade-up"
+    >
       <img
         src={cardData.image}
         alt={cardData.name + " Logo"}

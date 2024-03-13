@@ -1,6 +1,9 @@
 export default function ProjectCard({ projectData }) {
   return (
-    <div className="rounded-lg shadow-md w-100 py-2 px-2 lg:grid lg:grid-cols-2 md:hover:shadow-2xl ease-in-out duration-100">
+    <div
+      className="rounded-lg shadow-md w-100 py-2 px-2 lg:grid lg:grid-cols-2 md:hover:shadow-2xl ease-in-out duration-100"
+      data-aos="fade-up"
+    >
       <div className="grid place-items-center h-48 mt-2 mb-2 mx-2 px-2 rounded-lg border-solid border-2 border-black overflow-hidden">
         <img
           src={projectData.image}
